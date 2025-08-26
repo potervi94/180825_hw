@@ -313,3 +313,24 @@ On branch newbranch
 Your branch is up to date with 'origin/newbranch'.
 
 nothing to commit, working tree clean
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git switch newbranch
+Switched to branch 'newbranch'
+Your branch is up to date with 'origin/newbranch'.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch)                                                                                                           
+$ git status
+On branch newbranch
+Your branch is up to date with 'origin/newbranch'.
+
+nothing to commit, working tree clean
+
+Обидві гілки однакові
