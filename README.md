@@ -95,9 +95,96 @@ Your branch is ahead of 'origin/master' by 1 commit.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
-- Завдання 6: Створіть нову гілку з назвою newbranch.
-- Завдання 7: Створіть нову підпапку з набором файлів, наповніть їх даними. Після наповнення створіть commit із вмістом нової підпапки в гілці newbranch.
-- Завдання 8: Перейдіть у гілку master. Створіть нову підпапку з файлами, наповніть їх даними. Після наповнення створіть commit із вмістом нової папки в гілці master.
+
+# Завдання 6
+Створіть нову гілку з назвою newbranch.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (master)                                                                                                                                                 
+$ git switch -c newbranch
+Switched to a new branch 'newbranch'
+
+# Завдання 7
+Створіть нову підпапку з набором файлів, наповніть їх даними.
+Після наповнення створіть commit із вмістом нової підпапкив гілці newbranch.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (newbranch)                                                                                                                                              
+$ mkdir newbranch_folder
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (newbranch)                                                                                                                                              
+$ cd newbranch_folder
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (newbranch)                                                                                                                             
+$ echo "### This is nebranch ####" >> newbranch_file.txt
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (newbranch)
+$ git add  newbranch_file.txt
+warning: in the working copy of 'newbranch_folder/newbranch_file.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (newbranch)                                                                                                                             
+$ git status
+On branch newbranch
+Your branch is up to date with 'origin/newbranch'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   newbranch_file.txt                                                                                                                                                                                              
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../README.md                                                                                                                                                                                                    
+
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (newbranch)                                                                                                                             
+$ git commit -am "Task 7"
+[newbranch 229f6f7] Task 7
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 newbranch_folder/newbranch_file.txt
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (newbranch)                                                                                                                             
+### $ git status
+    On branch newbranch
+    Your branch is ahead of 'origin/newbranch' by 1 commit.
+    (use "git push" to publish your local commits)
+    
+    nothing to commit, working tree clean
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (newbranch)                                                                                                                             
+### $ git push -u origin HEAD
+    Enumerating objects: 7, done.
+    Counting objects: 100% (7/7), done.
+    Delta compression using up to 32 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (5/5), 485 bytes | 121.00 KiB/s, done.
+    Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+    remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+    To https://github.com/potervi94/180825_hw.git
+    a042d46..229f6f7  HEAD -> newbranch
+    branch 'newbranch' set up to track 'origin/newbranch'.
+
+# Завдання 8
+Перейдіть у гілку master. Створіть нову підпапку з файлами, наповніть їх даними. Після наповнення створіть commit із вмістом нової папки в гілці master.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (newbranch)                                                                                                                             
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (master)                                                                                                                                
+$ mkdir new_master_folder
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder (master)                                                                                                                                
+$ cd new_master_folder
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ echo "### This is master ####" >> master_file.txt
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git add master_file.txt
+warning: in the working copy of 'newbranch_folder/new_master_folder/master_file.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git commit -am "Завдання 8"
 - Завдання 9: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch.
 - Завдання 10: Перейдіть у гілку master. Внесіть зміни в кілька використаних файлів. Зміни мають привести до конфліктів при злитті. Створіть commit зі змінами.
 - Завдання 11: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch. Розв'яжіть конфлікти при їх виникненні.
