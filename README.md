@@ -61,6 +61,19 @@ Changes not staged for commit:
 
 # Завдання 5
 Створіть commit на підставі даних, доданих в індекс. Використайте команду: git commit.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (master)
+$ gh auth status
+github.com
+  ✓ Logged in to github.com account potervi94 (keyring)
+  - Active account: true
+  - Git operations protocol: https
+  - Token: ghp_************************************
+  - Token scopes: 'admin:enterprise', 'admin:gpg_key', 'admin:org', 'admin:org_hook', 'admin:public_key', 'admin:repo_hook', 'admin:ssh_signing_key', 'audit_log', 'codespace', 'copilot', 'delete:packages', 'gist', 'notifications', 'project', 'repo', 'user', 'workflow', 'write:discussion', 'write:network_configurations', 'write:packages'
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (master)
+
+
 - Завдання 6: Створіть нову гілку з назвою newbranch.
 - Завдання 7: Створіть нову підпапку з набором файлів, наповніть їх даними. Після наповнення створіть commit із вмістом нової підпапки в гілці newbranch.
 - Завдання 8: Перейдіть у гілку master. Створіть нову підпапку з файлами, наповніть їх даними. Після наповнення створіть commit із вмістом нової папки в гілці master.
