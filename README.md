@@ -72,8 +72,29 @@ github.com
   - Token scopes: 'admin:enterprise', 'admin:gpg_key', 'admin:org', 'admin:org_hook', 'admin:public_key', 'admin:repo_hook', 'admin:ssh_signing_key', 'audit_log', 'codespace', 'copilot', 'delete:packages', 'gist', 'notifications', 'project', 'repo', 'user', 'workflow', 'write:discussion', 'write:network_configurations', 'write:packages'
 
 user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md                                                                                                                                                                                                       
 
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (master)                                                                                                                                                 
+$ git commit -am "Task 5"
+[master 2d4eb84] Task 5
+ 1 file changed, 13 insertions(+)
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (master)                                                                                                                                                 
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
 - Завдання 6: Створіть нову гілку з назвою newbranch.
 - Завдання 7: Створіть нову підпапку з набором файлів, наповніть їх даними. Після наповнення створіть commit із вмістом нової підпапки в гілці newbranch.
 - Завдання 8: Перейдіть у гілку master. Створіть нову підпапку з файлами, наповніть їх даними. Після наповнення створіть commit із вмістом нової папки в гілці master.
