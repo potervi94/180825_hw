@@ -185,6 +185,26 @@ warning: in the working copy of 'newbranch_folder/new_master_folder/master_file.
 
 user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
 $ git commit -am "Завдання 8"
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git commit -am "Завдання 8"
+[master 325708b] ╨Ч╨░╨▓╨┤╨░╨╜╨╜╤П 7(╤З╨╡╤А╨╡╨╖8
+ 2 files changed, 91 insertions(+), 3 deletions(-)
+ create mode 100644 newbranch_folder/new_master_folder/master_file.txt
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git push -u origin HEAD
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 1.40 KiB | 238.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/potervi94/180825_hw.git
+   352e9e7..325708b  HEAD -> master
+branch 'master' set up to track 'origin/master'.
+
 - Завдання 9: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch.
 - Завдання 10: Перейдіть у гілку master. Внесіть зміни в кілька використаних файлів. Зміни мають привести до конфліктів при злитті. Створіть commit зі змінами.
 - Завдання 11: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch. Розв'яжіть конфлікти при їх виникненні.
