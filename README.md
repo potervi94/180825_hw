@@ -234,12 +234,37 @@ Merge branch 'master' into newbranch
 
 ESC, :wq Enter
 
+# Завдання 10
+Перейдіть у гілку master. Внесіть зміни в кілька використаних файлів. Зміни мають привести до конфліктів при злитті.
+Створіть commit зі змінами.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch)
+$ git status
+On branch newbranch
+Your branch is up to date with 'origin/newbranch'.
 user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch)                                                                                                           
 $ git merge master
 Auto-merging README.md
 CONFLICT (content): Merge conflict in README.md
 Automatic merge failed; fix conflicts and then commit the result.
 
+nothing to commit, working tree clean
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ echo "### Second row to master content ####" > master_file.txt
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git commit -am "Завдання 10(master)"
+warning: in the working copy of 'newbranch_folder/new_master_folder/master_file.txt', LF will be replaced by CRLF the next time Git touches it
+[master 4951843] ╨Ч╨░╨▓╨┤╨░╨╜╨╜╤П 7(╤З├Р10(master)
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+- Завдання 11: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch. Розв'яжіть конфлікти при їх виникненні.
 user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch|MERGING)                                                                                                   
 $ git status
 On branch newbranch
