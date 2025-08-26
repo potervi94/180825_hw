@@ -313,3 +313,24 @@ On branch newbranch
 Your branch is up to date with 'origin/newbranch'.
 
 nothing to commit, working tree clean
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch)                                                                                                           
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (master)                                                                                                              
+$ git merge newbranch
+Updating 344d176..8334e9a
+Fast-forward
+ README.md                           | 78 +++++++++++++++++++++++++++++++++++++
+ newbranch_folder/newbranch_file.txt |  1 +                                                                                                                                                                                         
+ 2 files changed, 79 insertions(+)
+ create mode 100644 newbranch_folder/newbranch_file.txt
