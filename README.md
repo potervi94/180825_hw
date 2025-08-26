@@ -95,7 +95,14 @@ Your branch is ahead of 'origin/master' by 1 commit.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
-- Завдання 6: Створіть нову гілку з назвою newbranch.
+
+# Завдання 6
+Створіть нову гілку з назвою newbranch.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw (master)                                                                                                                                                 
+$ git switch -c newbranch
+Switched to a new branch 'newbranch'
+
 - Завдання 7: Створіть нову підпапку з набором файлів, наповніть їх даними. Після наповнення створіть commit із вмістом нової підпапки в гілці newbranch.
 - Завдання 8: Перейдіть у гілку master. Створіть нову підпапку з файлами, наповніть їх даними. Після наповнення створіть commit із вмістом нової папки в гілці master.
 - Завдання 9: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch.
