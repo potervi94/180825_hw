@@ -208,7 +208,54 @@ branch 'master' set up to track 'origin/master'.
 # Завдання 9
 Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch.
 
+Merge branch 'master' into newbranch                                                                                                                                                                                                
 
+# Conflicts:                                                                                                                                                                                                                        
+#       README.md                                                                                                                                                                                                                   
+#                                                                                                                                                                                                                                   
+# It looks like you may be committing a merge.                                                                                                                                                                                      
+# If this is not correct, please run                                                                                                                                                                                                
+#       git update-ref -d MERGE_HEAD                                                                                                                                                                                                
+# and try again.                                                                                                                                                                                                                    
+
+
+# Please enter the commit message for your changes. Lines starting                                                                                                                                                                  
+# with '#' will be ignored, and an empty message aborts the commit.                                                                                                                                                                 
+#                                                                                                                                                                                                                                   
+# On branch newbranch                                                                                                                                                                                                               
+# Your branch is up to date with 'origin/newbranch'.                                                                                                                                                                                
+#                                                                                                                                                                                                                                   
+# All conflicts fixed but you are still merging.                                                                                                                                                                                    
+#                                                                                                                                                                                                                                   
+# Changes to be committed:                                                                                                                                                                                                          
+#       modified:   ../../README.md                                                                                                                                                                                                 
+#       new file:   master_file.txt                                                                                                                                                                                                 
+#          
+
+ESC, :wq Enter
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch)                                                                                                           
+$ git merge master
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch|MERGING)                                                                                                   
+$ git status
+On branch newbranch
+Your branch is up to date with 'origin/newbranch'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   ../../README.md                                                                                                                                                                                                 
+        new file:   master_file.txt                                                                                                                                                                                                 
+
+
+user@CEPBEPOKK MINGW64 ~/OneDrive/__AIPYTHON52/ALL_TASKS/08_2025/180825_hw/newbranch_folder/new_master_folder (newbranch|MERGING)                                                                                                   
+$ git commit
+[newbranch ef3f429] Merge branch 'master' into newbranch
 
 - Завдання 10: Перейдіть у гілку master. Внесіть зміни в кілька використаних файлів. Зміни мають привести до конфліктів при злитті. Створіть commit зі змінами.
 - Завдання 11: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch. Розв'яжіть конфлікти при їх виникненні.
