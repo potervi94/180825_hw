@@ -205,6 +205,10 @@ To https://github.com/potervi94/180825_hw.git
    352e9e7..325708b  HEAD -> master
 branch 'master' set up to track 'origin/master'.
 
-- Завдання 9: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch.
+# Завдання 9
+Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch.
+
+
+
 - Завдання 10: Перейдіть у гілку master. Внесіть зміни в кілька використаних файлів. Зміни мають привести до конфліктів при злитті. Створіть commit зі змінами.
 - Завдання 11: Перейдіть у гілку newbranch. Злийте вміст гілки master з гілкою newbranch. Розв'яжіть конфлікти при їх виникненні.
